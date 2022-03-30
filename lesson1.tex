@@ -1,0 +1,89 @@
+% LESSON ONE
+% Text following a percentage sign (%) is ignored by the typesetter.
+% In this manual, we will use such text for comments and notes.
+% You do not need to type out these comments.
+
+\documentclass{amsart} 
+% Almost all commands start with a backslash (\).
+% amsart is short for American Mathematical Society article.
+
+\thispagestyle{empty} 
+%We use this to prevent a page number from appearing.
+
+\begin{document}
+\begin{center}
+	\textbf{Lesson One: The Basics}
+\end{center}
+
+\textbf{Font Families}
+
+% One or more blank lines end a paragraph and put the typesetter on a new line.
+I \textbf{love} math!
+
+\LaTeX\ does \emph{not} rhyme with ``paychecks''!\\
+% The \ after \LaTeX creates a small horizontal space. Try leaving it out.
+% The \\ at the end creates additional vertical space between lines.
+% See Lesson Six for more on spacing.
+% In most cases, \emph and \textit look the same.
+
+\textbf{Math Enviroments, Superscripts, and Subscripts}
+
+The numbers 3, 4, and 5 are a Pythagorean triple because $3^2+4^2=5^2$.\\
+% The dollar signs ($) open and close the inline math environment.
+
+We all     know      that $(x^n)'=nx^{n-1}$, but what is $(x^x)'$?\\ 
+% Note that the typesetter ignores multiple spaces as above.
+
+The recursive definition for the Fibonacci numbers is
+
+$F_1=1$, $F_2=1$, and $F_n=F_{n-1}+F_{n-2}$ for all integers $n>2$.\\
+
+Compare $\frac{1}{a+b}\neq\frac{1}{a}+\frac{1}{b}$ to the following.
+
+$$\frac{1}{a+b}\neq\frac{1}{a}+\frac{1}{b}$$
+%The double dollar signs ($$) open and close the displayed math environment.
+
+We can also display it midline by using ``display-style'': 
+$\displaystyle\frac{1}{a+b}\neq\frac{1}{a}+\frac{1}{b}$.\\
+% Make sure your typeset quotation marks look right!
+
+% To force a page break at any place in your document, you can use
+% \pagebreak or \newpage. 
+
+
+\begin{center}
+  \textbf{Exercise One: The Basics}
+\end{center}
+
+A certain math professor will \textbf{scream} and may even \textbf{cry} if you
+confuse the Latin terms \emph{id est}, meaning ``that is to say'' and
+\emph{exempli gratia}, meaning ``for instance.''
+Compare the following.\\
+
+I adore polynomials, \emph{e.g.}, $x^{4}+x^{2}+1$.
+
+
+I adore polynomials, \emph{i.e.}, expressions of the form
+$a_{0} + a_{1}x + a_{2}x^{2} + \dots + a_{n}x^{n}$,where $a_{0},a_{1},...,a_{n}$ are
+constants and $n$ is a non-negative integer.\\
+
+Do you lie awake at night wondering what is the smallest positive integer that
+can be written as the sum of the two perfect cubes in two distinct ways? Well,
+wonder no more:
+
+$$ 1729 = 10^{3} + 9^{3} = 12^{3} + 1^{3} $$
+
+We all learned in first grade that $(a + b)^{3} \neq a^{3} + b^{3}$, but when we
+study modular arithmetic we'll find that the two \emph{are} equal in ``mod 3.''
+
+The famous mathematician Euler (rhymes with ``boiler'' \textbf{NOT} with
+``ruler'') used the geometric series formula
+$a + ar + ar^{2} + ar^{3} + ... = a / (1 - r)$ to conclude the following
+
+$$ 1 - 1 + 1 - 1 + 1 - \dots = \frac{1}{2} $$
+
+But we know the formula only applies if -1 $<$ $r$ $<$ 1, so this result is not
+valid.
+
+
+\end{document}
